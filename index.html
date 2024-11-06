@@ -1,13 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Simple Form</title>
+    <title>WELCOME TO LEBRON'S FAN PAGE</title>
+    <style>
+        /* CSS to style the page */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #d3d3d3; /* Light grey background */
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+        }
+        img {
+            width: 300px; /* Adjust the size of the image */
+            height: auto;
+            border-radius: 10px; /* Rounded corners for the image */
+        }
+        h1 {
+            color: #333; /* Darker text color for contrast */
+        }
+    </style>
 </head>
 <body>
-    <form action="/submit-form" method="post">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
-        <button type="submit">Submit</button>
-    </form>
+    <div class="container">
+        <!-- Page title -->
+        <h1>WELCOME TO LEBRON'S FAN PAGE</h1>
+
+        <!-- Image of LeBron -->
+        <img src="https://deadline.com/wp-content/uploads/2022/08/Lebron-James.jpg" alt="LeBron James">
+
+        <!-- Form below the image -->
+        <form action="/submit-form" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
 </body>
 </html>
